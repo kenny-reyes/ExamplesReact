@@ -8,6 +8,22 @@
   pointer-events: none;
 }
 
+div + p {
+  text-shadow: 0 2px white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b8bec5;
+}
+
+.triangle {
+  width: 200px;
+  height: 200px;
+  border-top: 20px solid #ff5555;
+  border-left: 20px solid yellow;
+  border-right: 100px solid blue;
+  border-bottom: 20px solid green;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,9 +41,9 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(365deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
