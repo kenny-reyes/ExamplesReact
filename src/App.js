@@ -7,6 +7,7 @@ import AutoLinkPage from "./pages/AutoLinkPage";
 import Triangle from "./pages/Triangle";
 import CssSiblings from "./pages/CssSiblings";
 import CarouselPage from "./pages/CarouselPage";
+import OverUnderlineAnimation from "./pages/OverUnderlineAnimation";
 
 export default function App() {
   return (
@@ -29,6 +30,9 @@ export default function App() {
             <li>
               <Link to="CarouselPage/">CarouselPage</Link>
             </li>
+            <li>
+              <Link to="OverUnderlineAnimation/">OverUnderlineAnimation</Link>
+            </li>
           </ul>
         </nav>
 
@@ -37,6 +41,10 @@ export default function App() {
         <Route path="/Triangle/" component={Triangle} />
         <Route path="/CssSiblings/" component={CssSiblings} />
         <Route path="/CarouselPage/" component={CarouselPage} />
+        <Route
+          path="/OverUnderlineAnimation/"
+          component={OverUnderlineAnimation}
+        />
       </div>
     </Router>
   );
