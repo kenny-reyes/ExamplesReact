@@ -2,6 +2,7 @@
   display: inline-block;
   position: relative;
   color: #0087ca;
+  margin-left: 60px;
 }
 
 .hover-underline-animation::after {
@@ -14,7 +15,7 @@
   left: 0;
   background-color: #0087ca;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 20.25s ease-out;
 }
 
 .hover-underline-animation:hover::after {

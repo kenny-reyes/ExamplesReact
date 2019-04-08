@@ -8,6 +8,7 @@ import Triangle from "./pages/Triangle";
 import CssSiblings from "./pages/CssSiblings";
 import CarouselPage from "./pages/CarouselPage";
 import OverUnderlineAnimation from "./pages/OverUnderlineAnimation";
+import FileDropScreen from "./pages/FileDropScreen";
 
 export default function App() {
   return (
@@ -33,6 +34,9 @@ export default function App() {
             <li>
               <Link to="OverUnderlineAnimation/">OverUnderlineAnimation</Link>
             </li>
+            <li>
+              <Link to="FileDropScreen/">FileDropScreen</Link>
+            </li>
           </ul>
         </nav>
 
@@ -45,6 +49,7 @@ export default function App() {
           path="/OverUnderlineAnimation/"
           component={OverUnderlineAnimation}
         />
+        <Route path="/FileDropScreen/" component={FileDropScreen} />
       </div>
     </Router>
   );
