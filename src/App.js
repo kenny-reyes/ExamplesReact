@@ -1,51 +1,43 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import { Carousel } from "./component/carousel";
+import HomeScreen from "./pages/HomeScreen";
+import AutoLinkPage from "./pages/AutoLinkPage";
+import Triangle from "./pages/Triangle";
+import CssSiblings from "./pages/CssSiblings";
+import CarouselPage from "./pages/CarouselPage";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <div class="triangle"></div>
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <div />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <Carousel
-          carouselItems={[
-            <img
-              src="https://www.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg"
-              height="200px"
-            />,
-            <img
-              src="https://www.nationalgeographic.com.es/medio/2019/01/03/zhangjiajie_e86f03ed_1500x1001.jpg"
-              height="200px"
-            />,
-            <img
-              src="https://www.nationalgeographic.com.es/medio/2019/03/26/lithium-mining-i_6f9b895e_2000x1595.jpg"
-              height="200px"
-            />
-          ]}
-        />
-        </header>
+export default function App() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/AutoLinkPage/">AutoLinkPage</Link>
+            </li>
+            <li>
+              <Link to="Triangle/">Triangle</Link>
+            </li>
+            <li>
+              <Link to="CssSiblings/">CssSiblings</Link>
+            </li>
+            <li>
+              <Link to="CarouselPage/">CarouselPage</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Route path="/" exact component={HomeScreen} />
+        <Route path="/AutoLinkPage/" component={AutoLinkPage} />
+        <Route path="/Triangle/" component={Triangle} />
+        <Route path="/CssSiblings/" component={CssSiblings} />
+        <Route path="/CarouselPage/" component={CarouselPage} />
       </div>
-    );
-  }
+    </Router>
+  );
 }
-
-export default App;

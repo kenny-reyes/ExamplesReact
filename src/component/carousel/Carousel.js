@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./carousel.scss";
+import "./Carousel.css";
 
 export function Carousel(props) {
   const [active, setActive] = React.useState(0);
