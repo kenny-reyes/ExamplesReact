@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import "./Triangle.css";
 
 const TriangleStyled = styled.div`
   margin-top: 100px;
@@ -14,6 +15,11 @@ const TriangleStyled = styled.div`
 
 export default class Triangle extends Component {
   render() {
-    return <TriangleStyled />;
+    return (
+      <div>
+        <TriangleStyled />
+        <div className="dynamic-shadow" />
+      </div>
+    );
   }
 }
