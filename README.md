@@ -1,3 +1,8 @@
+# React examples
+
+This project is a collection of "react" tricks, mostly come from the browser addon 30 seconds of knowledge [Firefox](https://addons.mozilla.org/en-US/firefox/addon/30-seconds-of-knowledge/)|[Chrome](https://chrome.google.com/webstore/detail/30-seconds-of-knowledge/mmgplondnjekobonklacmemikcnhklla)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
