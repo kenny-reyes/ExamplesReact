@@ -9,6 +9,8 @@ import CssSiblings from "./pages/CssSiblings";
 import CarouselPage from "./pages/CarouselPage";
 import OverUnderlineAnimation from "./pages/OverUnderlineAnimation";
 import FileDropScreen from "./pages/FileDropScreen";
+import LimitedWordTextareaPage from "./pages/LimitedWordTextareaPage";
+import MultiselectCheckboxPage from "./pages/MultiselectCheckboxPage";
 
 export default function App() {
   return (
@@ -37,6 +39,12 @@ export default function App() {
             <li>
               <Link to="FileDropScreen/">FileDropScreen</Link>
             </li>
+            <li>
+              <Link to="LimitedWordTextarea/">LimitedWordTextarea</Link>
+            </li>
+            <li>
+              <Link to="MultiselectCheckbox/">MultiselectCheckbox</Link>
+            </li>
           </ul>
         </nav>
 
@@ -50,6 +58,14 @@ export default function App() {
           component={OverUnderlineAnimation}
         />
         <Route path="/FileDropScreen/" component={FileDropScreen} />
+        <Route
+          path="/LimitedWordTextarea/"
+          component={LimitedWordTextareaPage}
+        />
+        <Route
+          path="/MultiselectCheckbox/"
+          component={MultiselectCheckboxPage}
+        />
       </div>
     </Router>
   );
