@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { useTranslation, withTranslation, Trans } from 'react-i18next';
+
 
 import HomeScreen from "./pages/HomeScreen";
 import AutoLinkPage from "./pages/AutoLinkPage";
