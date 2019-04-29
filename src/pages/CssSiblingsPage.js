@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./CssSiblings.css";
+import "./CssSiblingsPage.css";
 
 export default class CssSiblings extends Component {
   render() {

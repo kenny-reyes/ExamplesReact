@@ -3,16 +3,16 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { useTranslation, withTranslation, Trans } from 'react-i18next';
 
-
-import HomeScreen from "./pages/HomeScreen";
+import HomePage from "./pages/HomePage";
 import AutoLinkPage from "./pages/AutoLinkPage";
-import Triangle from "./pages/Triangle";
-import CssSiblings from "./pages/CssSiblings";
+import TrianglePage from "./pages/TrianglePage";
+import CssSiblingsPage from "./pages/CssSiblingsPage";
 import CarouselPage from "./pages/CarouselPage";
-import OverUnderlineAnimation from "./pages/OverUnderlineAnimation";
-import FileDropScreen from "./pages/FileDropScreen";
+import OverUnderlineAnimationPage from "./pages/OverUnderlineAnimationPage";
+import FileDropPage from "./pages/FileDropPage";
 import LimitedWordTextareaPage from "./pages/LimitedWordTextareaPage";
 import MultiselectCheckboxPage from "./pages/MultiselectCheckboxPage";
+import TranslationPage from "./pages/TranslationPage";
 
 export default function App() {
   return (
@@ -27,46 +27,53 @@ export default function App() {
               <Link to="/AutoLinkPage/">AutoLinkPage</Link>
             </li>
             <li>
-              <Link to="Triangle/">Triangle</Link>
+              <Link to="TrianglePage/">Triangle</Link>
             </li>
             <li>
-              <Link to="CssSiblings/">CssSiblings</Link>
+              <Link to="CssSiblingsPage/">CssSiblings</Link>
             </li>
             <li>
               <Link to="CarouselPage/">CarouselPage</Link>
             </li>
             <li>
-              <Link to="OverUnderlineAnimation/">OverUnderlineAnimation</Link>
+              <Link to="OverUnderlineAnimationPage/">OverUnderlineAnimation</Link>
             </li>
             <li>
-              <Link to="FileDropScreen/">FileDropScreen</Link>
+              <Link to="FileDropPage/">FileDrop</Link>
             </li>
             <li>
-              <Link to="LimitedWordTextarea/">LimitedWordTextarea</Link>
+              <Link to="LimitedWordTextareaPage/">LimitedWordTextarea</Link>
             </li>
             <li>
-              <Link to="MultiselectCheckbox/">MultiselectCheckbox</Link>
+              <Link to="MultiselectCheckboxPage/">MultiselectCheckbox</Link>
+            </li>
+            <li>
+              <Link to="TranslationPage/">Translation</Link>
             </li>
           </ul>
         </nav>
 
-        <Route path="/" exact component={HomeScreen} />
+        <Route path="/" exact component={HomePage} />
         <Route path="/AutoLinkPage/" component={AutoLinkPage} />
-        <Route path="/Triangle/" component={Triangle} />
-        <Route path="/CssSiblings/" component={CssSiblings} />
+        <Route path="/TrianglePage/" component={TrianglePage} />
+        <Route path="/CssSiblingsPage/" component={CssSiblingsPage} />
         <Route path="/CarouselPage/" component={CarouselPage} />
         <Route
           path="/OverUnderlineAnimation/"
-          component={OverUnderlineAnimation}
+          component={OverUnderlineAnimationPage}
         />
-        <Route path="/FileDropScreen/" component={FileDropScreen} />
+        <Route path="/FileDropPage/" component={FileDropPage} />
         <Route
-          path="/LimitedWordTextarea/"
+          path="/LimitedWordTextareaPage/"
           component={LimitedWordTextareaPage}
         />
         <Route
-          path="/MultiselectCheckbox/"
+          path="/MultiselectCheckboxPage/"
           component={MultiselectCheckboxPage}
+        />
+        <Route
+          path="/TranslationPage/"
+          component={TranslationPage}
         />
       </div>
     </Router>

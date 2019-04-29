@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import "./Triangle.css";
+import "./TrianglePage.css";
 
 const TriangleStyled = styled.div`
   margin-top: 100px;
