@@ -13,6 +13,7 @@ import FileDropPage from "./pages/FileDropPage";
 import LimitedWordTextareaPage from "./pages/LimitedWordTextareaPage";
 import MultiselectCheckboxPage from "./pages/MultiselectCheckboxPage";
 import TranslationPage from "./pages/TranslationPage";
+import TruncateTextMultilinePage from "./pages/TruncateTextMultilinePage";
 
 export default function App() {
   return (
@@ -50,6 +51,9 @@ export default function App() {
             <li>
               <Link to="TranslationPage/">Translation</Link>
             </li>
+            <li>
+              <Link to="TruncateTextMultilinePage/">TruncateTextMultilinePage</Link>
+            </li>
           </ul>
         </nav>
 
@@ -72,8 +76,12 @@ export default function App() {
           component={MultiselectCheckboxPage}
         />
         <Route
-          path="/TranslationPage/"
+          path="/TranslationPage/" s
           component={TranslationPage}
+        />
+        <Route
+          path="/TruncateTextMultilinePage/"
+          component={TruncateTextMultilinePage}
         />
       </div>
     </Router>
