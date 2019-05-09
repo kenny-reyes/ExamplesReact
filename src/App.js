@@ -14,6 +14,7 @@ import LimitedWordTextareaPage from "./pages/LimitedWordTextareaPage";
 import MultiselectCheckboxPage from "./pages/MultiselectCheckboxPage";
 import TranslationPage from "./pages/TranslationPage";
 import TruncateTextMultilinePage from "./pages/TruncateTextMultilinePage";
+import bouncingLoader from "./pages/bouncingLoader";
 
 export default function App() {
   return (
@@ -54,6 +55,9 @@ export default function App() {
             <li>
               <Link to="TruncateTextMultilinePage/">TruncateTextMultilinePage</Link>
             </li>
+            <li>
+              <Link to="bouncingLoader/">bouncingLoader</Link>
+            </li>
           </ul>
         </nav>
 
@@ -82,6 +86,10 @@ export default function App() {
         <Route
           path="/TruncateTextMultilinePage/"
           component={TruncateTextMultilinePage}
+        />
+        <Route
+          path="/bouncingLoader/"
+          component={bouncingLoader}
         />
       </div>
     </Router>
